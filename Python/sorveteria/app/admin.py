@@ -10,8 +10,5 @@ class ListaCliente(admin.ModelAdmin):
     list_editable=('logradouro', 'cidade')
     list_per_page=2
 
-
-
-
 admin.site.register(cliente, ListaCliente)
 admin.site.register(Produto)
