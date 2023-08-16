@@ -1,5 +1,6 @@
 from django.contrib import admin
 from .models import cliente, Produto
+# Register your models here.
 
 class ListaCliente(admin.ModelAdmin):
     list_display=('id', 'nome', 'cpf', 'logradouro', 'cidade')
@@ -8,6 +9,9 @@ class ListaCliente(admin.ModelAdmin):
     list_filter=('cidade',)
     list_editable=('logradouro', 'cidade')
     list_per_page=2
-# Register your models here.
+
+
+
+
 admin.site.register(cliente, ListaCliente)
 admin.site.register(Produto)
