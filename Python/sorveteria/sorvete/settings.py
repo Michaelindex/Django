@@ -32,6 +32,8 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'app',
+    'admin_interface',
+    'colorfield',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -39,6 +41,11 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 ]
+
+ADMIN_INTERFACE_SETTINGS = {
+    'theme':'bootstrap',
+    'direction' : 'ltr'
+}
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
